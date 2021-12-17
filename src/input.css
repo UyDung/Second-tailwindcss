@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .member-avatar {
+        @apply rounded-full w-10 h-10 flex items-center justify-center bg-transparent;
+    }
+
+    .member-name {
+        @apply flex-nowrap text-sm;
+    }
+
+    .member-position {
+        @apply text-xs text-gray-400;
+    }
+
+    .member {
+        @apply flex flex-col items-center;
+    }
+} ;
