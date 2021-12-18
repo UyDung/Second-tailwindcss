@@ -10,22 +10,22 @@
 
     <body class="text-white bg-gray-800 relative">
         <header class="header bg-gray-800 text-white ml-32 drop-shadow-lg rounded-md px-4">
-            <nav class="navbar flex flex-1 items-center h-20 justify-between">
-                <div class="main-nav flex w-1/2 items-center justify-around">
-                    <a href="#" class="bg-gray-700 shadow-md shadow-gray-800 w-32 h-10 rounded-lg flex items-center justify-center hover:bg-gray-500 hover:text-slate-300">Dashboard</a>
-                    <a href="#" class="bg-gray-700 shadow-md shadow-gray-800 w-32 h-10 rounded-lg flex items-center justify-center hover:bg-gray-500 hover:text-slate-300">Message</a>
-                    <a href="#" class="bg-gray-700 shadow-md shadow-gray-800 w-32 h-10 rounded-lg flex items-center justify-center hover:bg-gray-500 hover:text-slate-300">Help</a>
+            <nav class="navbar flex flex-1 items-center h-20 justify-end xl:justify-between">
+                <div class="main-nav hidden xl:flex xl:w-1/2 items-center justify-around">
+                    <a href="#" class="bg-gray-700 shadow-md shadow-gray-800 w-32 h-10 rounded-lg flex items-center justify-center hover:bg-gray-500 hover:text-slate-300 transition-all">Dashboard</a>
+                    <a href="#" class="bg-gray-700 shadow-md shadow-gray-800 w-32 h-10 rounded-lg flex items-center justify-center hover:bg-gray-500 hover:text-slate-300 transition-all">Message</a>
+                    <a href="#" class="bg-gray-700 shadow-md shadow-gray-800 w-32 h-10 rounded-lg flex items-center justify-center hover:bg-gray-500 hover:text-slate-300 transition-all">Help</a>
                 </div>
                 <div class="profile flex items-center gap-4">
-                    <div class="w-12 h-12 flex items-center justify-center shadow-md bg-gray-700 shadow-gray-800 rounded hover:bg-sky-900 ">
-                        <img src="../images/alert.png" alt="" class="hover:opacity-80 cursor-pointer  " />
+                    <div class="w-12 h-12 flex items-center justify-center shadow-md bg-gray-700 shadow-gray-800 rounded hover:bg-sky-900">
+                        <img src="./images/alert.png" alt="" class="hover:opacity-80 cursor-pointer" />
                     </div>
 
                     <div class="w-12 h-12 flex items-center justify-center">
-                        <img src="../images/photoprofile.png" alt="" class="profile-photo rounded-full hover:border-sky-900 border-4 border-gray-700 cursor-pointer" />
+                        <img src="./images/photoprofile.png" alt="" class="profile-photo rounded-full hover:border-sky-900 border-4 border-gray-700 cursor-pointer" />
                     </div>
-                    <div class="name-bar text-gray-500 cursor-pointer hover:bg-sky-900 rounded-full hover:text-white">
-                        <select name="namebar" id="name-bar" class="rounded-full bg-transparent px-2 py-1 shadow-lg shadow-gray-600 w-full cursor-pointer">
+                    <div class="name-bar text-gray-500 cursor-pointer hover:bg-sky-900 rounded-full">
+                        <select name="namebar" id="name-bar" class="rounded-full bg-transparent px-2 py-1 shadow-lg shadow-gray-600 w-full cursor-pointer hover:text-gray-800">
                             <option value="Simrah Shah">Simrah Shah</option>
                             <option value="Simrah Shah">Uy Dung</option>
                             <option value="Simrah Shah">Dustin Nguyen</option>
@@ -35,38 +35,40 @@
             </nav>
         </header>
 
-        <main class="grid grid-cols-12 pb-10">
+        <main class="xl:grid xl:grid-cols-main xl:space-y-6 flex flex-col space-y-8">
             <!--1 left section  -->
             <section class="sidebar bg-gray-800 drop-shadow-lg rounded-md">
                 <div class="fixed top-0 left-0">
-                    <img src="../images/LOGO.svg" class="fixed top-0 left-0"/>
+                    <img src="./images/LOGO.svg" class="fixed top-0 left-0" />
                 </div>
 
-                <div class="main-sidebar flex flex-col gap-4 items-center h-3/6 px-2 py-16">
-                    <a href="#" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900">
-                        <img src="../1.png" alt="" />
+                <div class="main-sidebar flex justify-between xl:flex-col gap-4 items-center h-3/6 px-2 py-16">
+                    <a title="Dashboard" href="#" class="before:content-[attr(title)] before:hidden hover:before:visible w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900">
+                        <img src="./1.png" alt="" />
                     </a>
-                    <a href="#" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"><img src="../2.png" alt="" /></a>
-                    <a href="#" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"><img src="../3.png" alt="" /></a>
-                    <a href="#" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"><img src="../4.png" alt="" /></a>
-                    <a href="#" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"><img src="../5.png" alt="" /></a>
-                    <a href="#" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 mt-20 bg-gray-900"
-                        ><img src="../6.png" alt=""
+                    <a href="#" title="Chart" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"
+                        ><img src="./2.png" alt=""
+                    /></a>
+                    <a href="#" title="Members" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"><img src="./3.png" alt="" /></a>
+                    <a href="#" title="Schedule" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"><img src="./4.png" alt="" /></a>
+                    <a href="#" title="Setting" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 bg-gray-900"><img src="./5.png" alt="" /></a>
+                    <a href="#" title="Logout" class="w-14 h-14 rounded shadow-md shadow-sky-900 hover:bg-stone-400 transition-all flex items-center justify-center p-4 xl:mt-20 bg-gray-900"
+                        ><img src="./6.png" alt=""
                     /></a>
                 </div>
             </section>
             <!--  left section end-->
 
             <!--2 middle section -->
-            <section class="middle bg-gray-800 col-span-8 text-center pt-10">
+            <section class="middle bg-gray-800 text-center space-y-8">
                 <!-- project -->
-                <div class="project flex items-center justify-center gap-10">
+                <div class="project flex flex-col items-center space-y-4 md:space-y-0 justify-center md:grid md:grid-cols-2 md:space-x-0 md:gap-8  md:px-10 lg:flex lg:flex-row  ">
                     <!-- project item  -->
-                    <div class="project-item shadow-md flex flex-col rounded-md items-center bg-gradient-to-br from-linear-start to-linear-end py-2 px-3 w-72 h-72 gap-1">
+                    <div class="project-item shadow-md flex flex-col rounded-md items-center bg-gradient-to-br from-linear-start to-linear-end p-4 w-80 h-80 gap-1 hover:scale-110 transition-all cursor-pointer ">
                         <div class="project-name flex flex-col w-full">
                             <p class="title text-xs text-left font-semibold">Project:</p>
                             <div class="project-logo flex justify-center">
-                                <img src="../Untitled-1 1.png" alt="" />
+                                <img src="./Untitled-1 1.png" />
                             </div>
                         </div>
 
@@ -74,23 +76,23 @@
                             <p class="title text-xs text-left mb-1 font-semibold">Team Members:</p>
                             <div class="members grid grid-cols-4 text-sm">
                                 <div class="member">
-                                    <img class="member-avatar" src="../member2.png" alt="" />
+                                    <img class="member-avatar" src="./member2.png" class="w-12 h-12" />
                                     <p class="member-name">Raima Hasan</p>
                                     <p class="member-position">Team Leader</p>
                                 </div>
 
                                 <div class="member">
-                                    <img class="member-avatar" src="../member3.png" alt="" />
+                                    <img class="member-avatar" src="./member3.png" alt="" />
                                     <p class="member-name">Nisha Anjum</p>
                                     <p class="member-position">SQA Engineer</p>
                                 </div>
                                 <div class="member">
-                                    <img class="member-avatar" src="../member4.png" alt="" />
+                                    <img class="member-avatar" src="./member4.png" alt="" />
                                     <p class="member-name">Sami Ahmed</p>
                                     <p class="member-position">Developer</p>
                                 </div>
                                 <div class="member">
-                                    <img class="member-avatar" src="../member2.png" alt="" />
+                                    <img class="member-avatar" src="./member2.png" alt="" />
                                     <p class="member-name">Raima Hasan</p>
                                     <p class="member-position">Network Support</p>
                                 </div>
@@ -100,18 +102,18 @@
                         <div class="project-progress flex flex-col w-full h-full">
                             <p class="title text-xs text-left font-semibold">Project Progress:</p>
                             <div class="project-progress-percent flex justify-center h-20">
-                                <img src="../percent.png" alt="" class="w-20 h-20" />
+                                <img src="./percent.png" alt="" class="w-24 h-24" />
                             </div>
                         </div>
                     </div>
                     <!-- project item end -->
 
                     <!-- project item  -->
-                    <div class="project-item shadow-md flex flex-col rounded-md items-center bg-gradient-to-br from-linear-start to-linear-end py-2 px-3 w-72 h-72 gap-1">
+                    <div class="project-item shadow-md flex flex-col rounded-md items-center bg-gradient-to-br from-linear-start to-linear-end p-4 w-80 h-80 gap-1 hover:scale-110 transition-all cursor-pointer">
                         <div class="project-name flex flex-col w-full">
                             <p class="title text-xs text-left font-semibold">Project:</p>
                             <div class="project-logo flex justify-center">
-                                <img src="../Untitled2 1.png" alt="" />
+                                <img src="./Untitled2 1.png" alt="" />
                             </div>
                         </div>
 
@@ -119,66 +121,68 @@
                             <p class="title text-xs text-left mb-1 font-semibold">Team Members:</p>
                             <div class="members grid grid-cols-4 text-sm">
                                 <div class="member">
-                                    <img class="member-avatar" src="../Leo.png" alt="" />
+                                    <img class="member-avatar" src="./Leo.png" alt="" />
                                     <p class="member-name">Leo Resim</p>
                                     <p class="member-position">Team Leader</p>
                                 </div>
 
                                 <div class="member">
-                                    <img class="member-avatar" src="../Tas.png" alt="" />
+                                    <img class="member-avatar" src="./Tas.png" alt="" />
                                     <p class="member-name">Tasfik Hamid</p>
                                     <p class="member-position">UI/UX Designer</p>
                                 </div>
                                 <div class="member">
-                                    <img class="member-avatar" src="../Nil.png" alt="" />
+                                    <img class="member-avatar" src="./Nil.png" alt="" />
                                     <p class="member-name">Alizah Binte</p>
                                     <p class="member-position">Developer</p>
                                 </div>
                                 <div class="member">
-                                    <img class="member-avatar" src="../Mel.png" alt="" />
+                                    <img class="member-avatar" src="./Mel.png" alt="" />
                                     <p class="member-name">Mehrin Sabnam</p>
                                     <p class="member-position">QA Engineer</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="project-progress shadow-md flex flex-col w-full h-full">
+                        <div class="project-progress flex flex-col w-full h-full">
                             <p class="title text-xs text-left font-semibold">Project Progress:</p>
                             <div class="project-progress-percent flex justify-center h-20">
-                                <img src="../percent2.png" alt="" class="w-20 h-20" />
+                                <img src="./percent2.png" alt="" class="w-24 h-24" />
                             </div>
                         </div>
                     </div>
                     <!-- project item end -->
 
-                    <div class="project-item rounded bg-gradient-to-br from-linear-start to-linear-end flex items-start flex-col justify-center gap-2 p-8 w-72 h-72">
-                        <h2 class="text-3xl">Add Project</h2>
-                        <p class="text-left text-gray-100">Create new project and customize it with your priority base UI kit element</p>
-                        <button class="btn-create-prj flex items-center gap-2 cursor-pointer hover:bg-gray-500 p-1 rounded-md transition-all">
-                            <img src="../create.png" alt="" class="border-2 rounded-full w-8 h-8 p-1.5 bg-white" />
-                            <span class="font-bold text-sm">Create New Project</span>
-                        </button>
+                    <div class="project-item shadow-md flex flex-col rounded-md items-center bg-gradient-to-br from-linear-start to-linear-end p-8 w-80 h-80 gap-1 hover:scale-110 transition-all cursor-pointer">
+                        <div class="w-full max-h-content m-auto text-left">
+                            <h2 class="text-3xl">Add Project</h2>
+                            <p class="text-left text-gray-100">Create new project and customize it with your priority base UI kit element</p>
+                            <button class="btn-create-prj flex items-center gap-2 cursor-pointer hover:bg-gray-500 p-1 rounded-md transition-all">
+                                <img src="./create.png" alt="" class="border-2 rounded-full w-8 h-8 p-1.5 bg-white" />
+                                <span class="font-bold text-sm">Create New Project</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <!-- project end -->
 
                 <!-- recent project -->
-                <div class="recent-project mt-10 px-4 mb-10">
+                <div class="recent-project flex px-10">
                     <table class="table-auto text-left w-full">
                         <thead>
                             <tr>
-                                <th class="uppercase text-xs pl-10">Recent Projects</th>
-                                <th class="uppercase text-xs">Created</th>
-                                <th class="uppercase text-xs">Team Leader</th>
-                                <th class="uppercase text-xs">Due</th>
-                                <th class="uppercase text-xs">Stats</th>
+                                <th class="xl:uppercase text-sm pl-4">Recent Projects</th>
+                                <th class="xl:uppercase text-sm">Created</th>
+                                <th class="xl:uppercase text-sm">Team Leader</th>
+                                <th class="xl:uppercase text-sm">Due</th>
+                                <th class="xl:uppercase text-sm">Stats</th>
                             </tr>
                             <tr class="h-2"></tr>
                         </thead>
                         <tbody>
                             <tr class="shadow-main rounded-full hover:bg-gray-600 cursor-pointer transition-all">
-                                <td class="rounded-l-full m-4 px-8 py-2">
-                                    <img src="../autodesk.png" class="h-6" />
+                                <td class="rounded-l-full m-4 px-4 py-2">
+                                    <img src="./autodesk.png" class="h-6" />
                                 </td>
                                 <td class="m-4 text-sm text-gray-100">25 May, 2020</td>
                                 <td class="m-4 text-sm text-gray-100">Raima Hasan</td>
@@ -187,8 +191,8 @@
                             </tr>
                             <tr class="h-2"></tr>
                             <tr class="shadow-main rounded-full hover:bg-gray-600 cursor-pointer transition-all">
-                                <td class="rounded-l-full m-4 px-8 py-2">
-                                    <img src="../target.png" class="h-6" />
+                                <td class="rounded-l-full m-4 px-4 py-2">
+                                    <img src="./target.png" class="h-6" />
                                 </td>
                                 <td class="m-4 text-sm text-gray-100">12 May, 2020</td>
                                 <td class="m-4 text-sm text-gray-100">Leo Resim</td>
@@ -197,8 +201,8 @@
                             </tr>
                             <tr class="h-2"></tr>
                             <tr class="rounded-full shadow-main hover:bg-gray-600 cursor-pointer transition-all">
-                                <td class="rounded-l-full m-4 px-8 py-2">
-                                    <img src="../remax.png" alt="" class="h-6" />
+                                <td class="rounded-l-full m-4 px-4 py-2">
+                                    <img src="./remax.png" alt="" class="h-6" />
                                 </td>
                                 <td class="m-4 text-sm text-gray-100">21 April, 2020</td>
                                 <td class="m-4 text-sm text-gray-100">Tamim lqbal</td>
@@ -211,20 +215,20 @@
                 <!-- recent project end -->
 
                 <!-- project OverView  -->
-                <div class="project-overview px-4">
+                <div class="project-overview px-10">
                     <h3 class="text-left text-sm mb-4">Project Overview</h3>
 
                     <!-- project overview items -->
-                    <div class="project-overview-items grid grid-cols-project place-content-center gap-4">
+                    <div class="project-overview-items flex flex-col md:grid md:grid-cols-project md:place-content-center gap-4">
                         <!-- project stats -->
-                        <div class="project-stats rounded shadow-second flex px-4 py-2">
+                        <div class="project-stats rounded shadow-second flex justify-center px-4 py-2">
                             <div class="project-stats-title">
                                 <h4 class="text-left text-sm">Monthly Stats</h4>
                                 <div class="project-stats-content flex items-center justify-between">
                                     <div class="left flex items-center">
                                         <span class="text-lg">85901</span>
                                         <button>
-                                            <img src="../Rect.png" alt="" />
+                                            <img src="./Rect.png" alt="" />
                                         </button>
                                     </div>
 
@@ -234,56 +238,59 @@
                                     </div>
                                 </div>
                                 <div class="chart">
-                                    <img src="../Frame 1.png" alt="" />
-                                    <img src="../day count.png" alt="" />
+                                    <img src="./Frame 1.png" alt="" />
+                                    <img src="./day count.png" alt="" />
                                 </div>
                             </div>
                         </div>
                         <!-- project stats end -->
 
                         <!-- project view-->
-                        <div class="project-view rounded shadow-second px-4 py-2">
-                            <div class="project-view-title">
-                                <h4 class="text-left text-sm">Monthy Project Views</h4>
+                        <div class="project-view rounded shadow-second flex flex-col justify-center   px-4 py-2">
+                         
+
+                            <div class="project-view-title flex items-center justify-around   ">
+                                <h4 class="md:text-left  text-left text-sm">Monthy Project Views</h4>
                                 <div class="project-view-content flex items-center justify-center">
                                     <span class="text-lg">17221</span>
                                     <button>
-                                        <img src="../Rect.png" />
+                                        <img src="./Rect.png" />
                                     </button>
                                 </div>
                             </div>
-                            <div class="project-view-chart grid auto-cols-auto gap-1">
-                                <img src="../Vertical Chart.png" class="col-start-1 col-end-2 row-start-1 row-end-2" />
+                            <div class="project-view-chart grid justify-center auto-cols-auto gap-1">
+                                <img src="./Vertical Chart.png" class="col-start-1 col-end-2 row-start-1 row-end-2" />
 
-                                <img src="../Chart.png" class="h-full mt-1.5 col-start-2 col-end-3 row-start-1 row-end-2" />
+                                <img src="./Chart.png" class="h-full mt-1.5 col-start-2 col-end-3 row-start-1 row-end-2" />
 
-                                <img src="../Horizontal Text.png" class="col-start-2 col-end-3 row-stat-2 row-end-3" />
+                                <img src="./Horizontal Text.png" class="col-start-2 col-end-3 row-stat-2 row-end-3" />
                             </div>
                         </div>
                         <!-- project view end-->
 
                         <!-- estimation -->
-                        <div class="estimation rounded shadow-second px-4 py-2">
-                            <h4 class="esimation-title text-sm text-left">Feature Effort Estimation</h4>
-                            <img src="../estimation-chart.png" alt="" class="estimation-chart w-40 h-40 m-auto" />
-                            <div class="estimation-description grid grid-cols-2 gap-2">
-                                <div class="flex items-center gap-1">
+                        <div class="estimation rounded shadow-second px-4 py-2 flex flex-col  items-center  justify-around ">
+                            <h4 class="esimation-title text-sm text-left ">Feature Effort Estimation</h4>
+                            <img src="./estimation-chart.png" alt="" class="estimation-chart w-28 h-28 m-auto" />
+
+                            <ul class="flex flex-col md:grid md:grid-cols-2 gap-2 ">
+                                <li class="flex items-center gap-1">
                                     <button class="bg-blue-500 w-10 h-6 rounded-full"></button>
                                     <span class="text-xs flex-nowrap">Research & Planning</span>
-                                </div>
-                                <div class="flex items-center gap-1">
+                                </li>
+                                <li class="flex items-center gap-1">
                                     <button class="bg-blue-600 w-10 h-6 rounded-full"></button>
                                     <span class="text-xs flex-nowrap">Development</span>
-                                </div>
-                                <div class="flex items-center gap-1">
+                                </li>
+                                <li class="flex items-center gap-1">
                                     <button class="bg-blue-200 w-10 h-6 rounded-full"></button>
                                     <span class="text-xs flex-nowrap">Design</span>
-                                </div>
-                                <div class="flex items-center gap-1">
+                                </li>
+                                <li class="flex items-center gap-1">
                                     <button class="bg-blue-100 w-10 h-6 rounded-full"></button>
                                     <span class="text-xs flex-nowrap">Testing</span>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
                         <!-- estimation end -->
                     </div>
@@ -294,71 +301,71 @@
             <!-- middle section end -->
 
             <!--3 right section -->
-            <section class="right bg-gray-800 col-span-3 text-center p-2">
+            <section class="right bg-gray-800 text-center p-2">
                 <!-- project activities -->
                 <div class="project-activities p-2 rounded shadow-main mb-4">
                     <h4 class="project-activities-title text-sm text-left">Project Activities</h4>
 
                     <!-- project-activities items -->
 
-                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-200 transition-all">
-                        <img src="../PhotoProfile1.png" alt="" class="w-14 h-14" />
+                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-600 transition-all">
+                        <img src="./PhotoProfile1.png" alt="" class="w-12 h-12" />
                         <div>
                             <p class="name text-sm text-left">Tanjijimul Alam</p>
-                            <p class="text-xs text-gray-200 text-left">Completed Task: Update of Project Alfa</p>
-                            <p class="text-xs text-gray-200 text-left">11 min ago</p>
+                            <p class="text-xs text-gray-300 text-left">Completed Task: Update of Project Alfa</p>
+                            <p class="text-xs text-gray-400 text-left">11 min ago</p>
                         </div>
                         <button class="rounded shadow-main p-2 ml-auto">
-                            <img src="../Vector 1.png" alt="" />
+                            <img src="./Vector 1.png" alt="" />
                         </button>
                     </div>
-                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-200 transition-all">
-                        <img src="../PhotoProfile2.png" alt="" class="w-14 h-14" />
+                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-600 transition-all">
+                        <img src="./PhotoProfile2.png" alt="" class="w-12 h-12" />
                         <div>
                             <p class="name text-sm text-left">Sarah Rahman</p>
-                            <p class="text-xs text-gray-200 text-left">Request for HR Support: Update of Project X</p>
-                            <p class="text-xs text-gray-200 text-left">53 min ago</p>
+                            <p class="text-xs text-gray-300 text-left">Request for HR Support: Update of Project X</p>
+                            <p class="text-xs text-gray-400 text-left">53 min ago</p>
                         </div>
                         <button class="rounded shadow-main p-2 ml-auto">
-                            <img src="../Vector 1.png" alt="" />
+                            <img src="./Vector 1.png" alt="" />
                         </button>
                     </div>
-                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-200 transition-all">
-                        <img src="../PhotoProfile3.png" alt="" class="w-14 h-14" />
+                    <div class="project-activities-items flex md:justify-center  items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-600 transition-all">
+                        <img src="./PhotoProfile3.png" alt="" class="w-12 h-12" />
                         <div>
                             <p class="name text-sm text-left">Anika Tabassum</p>
-                            <p class="text-xs text-gray-200 text-left">Completed Task: Update of Project Remax</p>
-                            <p class="text-xs text-gray-200 text-left">1 hour ago</p>
+                            <p class="text-xs text-gray-300 text-left">Completed Task: Update of Project Remax</p>
+                            <p class="text-xs text-gray-400 text-left">1 hour ago</p>
                         </div>
                         <button class="rounded shadow-main p-2 ml-auto">
-                            <img src="../Vector 1.png" alt="" />
+                            <img src="./Vector 1.png" alt="" />
                         </button>
                     </div>
-                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-200 transition-all">
-                        <img src="../PhotoProfile4.png" alt="" class="w-14 h-14" />
+                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-600 transition-all">
+                        <img src="./PhotoProfile4.png" alt="" class="w-12 h-12" />
                         <div>
                             <p class="name text-sm text-left">Raiyan Khan</p>
-                            <p class="text-xs text-gray-200 text-left">QA Part Done: Update of Project Sonic</p>
-                            <p class="text-xs text-gray-200 text-left">2 min ago</p>
+                            <p class="text-xs text-gray-300 text-left">QA Part Done: Update of Project Sonic</p>
+                            <p class="text-xs text-gray-400 text-left">2 min ago</p>
                         </div>
                         <button class="rounded shadow-main p-2 ml-auto">
-                            <img src="../Vector 1.png" alt="" />
+                            <img src="./Vector 1.png" alt="" />
                         </button>
                     </div>
-                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-200 transition-all">
-                        <img src="../PhotoProfile5.png" alt="" class="w-14 h-14" />
+                    <div class="project-activities-items flex items-center w-full gap-3 py-1 px-2 rounded cursor-pointer hover:bg-gray-600 transition-all">
+                        <img src="./PhotoProfile5.png" alt="" class="w-12 h-12" />
                         <div>
                             <p class="name text-sm text-left">Salma Hayek</p>
-                            <p class="text-xs text-gray-200 text-left">Request for system Support: Update of Project Alfa</p>
-                            <p class="text-xs text-gray-200 text-left">11 min ago</p>
+                            <p class="text-xs text-gray-300 text-left">Request for system Support: Update of Project Alfa</p>
+                            <p class="text-xs text-gray-400 text-left">11 min ago</p>
                         </div>
                         <button class="rounded shadow-main p-2 ml-auto">
-                            <img src="../Vector 1.png" alt="" />
+                            <img src="./Vector 1.png" alt="" />
                         </button>
                     </div>
 
                     <!-- project-activities items end -->
-                    <button>See More</button>
+                    <button class="cursor-pointer hover:bg-sky-500 px-2 rounded shadow-md shadow-sky-800">See More</button>
                 </div>
                 <!-- project activities end -->
 
@@ -369,35 +376,35 @@
                     <!-- Shedule list -->
                     <div class="flex flex-col items-start gap-2">
                         <div class="shedule-item flex items-center gap-2 hover:bg-gray-600 w-full rounded cursor-pointer transition-all">
-                            <img src="../schedule1.svg" alt="" />
+                            <img src="./schedule1.svg" alt="" class="w-12 h-12" />
                             <div class="content flex flex-col items-start gap-1">
-                                <p class="time text-xs text-gray-300">9.20-10.20 am</p>
-                                <p class="text-sm text-gray-100">Meeting With Team X</p>
-                                <p class="text-xs text-gray-300">at Meeting Room</p>
+                                <p class="time text-xs text-gray-400">9.20-10.20 am</p>
+                                <p class="text-xs text-gray-100">Meeting With Team X</p>
+                                <p class="text-xs text-gray-400">at Meeting Room</p>
                             </div>
                         </div>
                         <div class="shedule-item flex items-center gap-2 hover:bg-gray-600 w-full rounded cursor-pointer transition-all">
-                            <img src="../schedule2.svg" alt="" />
+                            <img src="./schedule2.svg" alt="" class="w-12 h-12" />
                             <div class="content flex flex-col items-start gap-1">
-                                <p class="time text-xs text-gray-300">12.30-1.30 am</p>
-                                <p class="text-sm text-gray-100">Presentation Demo On Target Project</p>
-                                <p class="text-xs text-gray-300">at Conference Room 2</p>
+                                <p class="time text-xs text-gray-400">12.30-1.30 am</p>
+                                <p class="text-xs text-gray-100 text-left">Presentation Demo On Target Project</p>
+                                <p class="text-xs text-gray-400">at Conference Room 2</p>
                             </div>
                         </div>
                         <div class="shedule-item flex items-center gap-2 hover:bg-gray-600 w-full rounded cursor-pointer transition-all">
-                            <img src="../schedule1.svg" alt="" />
+                            <img src="./schedule1.svg" alt="" class="w-12 h-12" />
                             <div class="content flex flex-col items-start gap-1">
-                                <p class="time text-xs text-gray-300">12.30-1.30 pm</p>
-                                <p class="text-sm text-gray-100">Meeting With CEOX</p>
-                                <p class="text-xs text-gray-300">at CEO's Room</p>
+                                <p class="time text-xs text-gray-400">12.30-1.30 pm</p>
+                                <p class="text-xs text-gray-100">Meeting With CEOX</p>
+                                <p class="text-xs text-gray-400">at CEO's Room</p>
                             </div>
                         </div>
                         <div class="shedule-item flex items-center gap-2 hover:bg-gray-600 w-full rounded cursor-pointer transition-all">
-                            <img src="../schedule3.png" alt="" />
+                            <img src="./schedule3.png" alt="" class="w-12 h-12" />
                             <div class="content flex flex-col items-start gap-1">
-                                <p class="time text-xs text-gray-300">4.30-5.00 pm</p>
-                                <p class="text-sm text-gray-100">Daily Standup Meet</p>
-                                <p class="text-xs text-gray-300">at Conference Room 1</p>
+                                <p class="time text-xs text-gray-400">4.30-5.00 pm</p>
+                                <p class="text-xs text-gray-100">Daily Standup Meet</p>
+                                <p class="text-xs text-gray-400">at Conference Room 1</p>
                             </div>
                         </div>
                     </div>

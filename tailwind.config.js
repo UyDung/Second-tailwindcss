@@ -7,7 +7,7 @@ module.exports = {
                 second: "0px 12px 24px -12px rgba(0, 0, 0, 0.25)  ",
             },
             boxShadow: {
-                main: "  0px 0px 4px 4px rgba(100, 100, 100, 0.15)",
+                main: "  0px 0px 4px 4px rgba(70, 70, 70, 0.45)",
                 second: "  0px 0px 4px 4px rgba(0, 0, 0, 0.25)",
             },
             colors: {
@@ -16,7 +16,8 @@ module.exports = {
                 primary: "#2C2F33 80%",
             },
             gridTemplateColumns: {
-                project: "38% 33% 25% ",
+                main: "7% 73% 20% ",
+                project: "40% 35% 25%"
             },
         },
     },
